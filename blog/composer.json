@@ -37,13 +37,13 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-            "chmod -R 777 app/bootstrap",
+            "chmod -R 777 bootstrap",
             "chmod -R 777 storage",
             "php artisan optimize"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "chmod -R 777 app/bootstrap",
+            "chmod -R 777 bootstrap",
             "chmod -R 777 storage",
             "php artisan optimize"
         ]
