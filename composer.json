@@ -37,7 +37,7 @@
         ],
         "post-install-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postInstall",
-			"heroku buildpacks:set heroku/php",
+			"buildpacks:set heroku/php",
             "chmod -R 777 bootstrap",
             "chmod -R 777 storage",
             "php artisan optimize"
